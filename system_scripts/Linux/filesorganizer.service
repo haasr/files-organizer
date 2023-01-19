@@ -1,0 +1,10 @@
+[Unit]
+Description=Automagically sort files by their extensions
+After=multi-user.target # Start after runlevel 2
+
+[Service]
+# Edit source dir as needed
+ExecStart=/home/pi/files-organizer/start.bash
+
+[Install]
+WantedBy=multi-user.target
