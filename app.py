@@ -26,6 +26,7 @@ def make_unique(dest, name):
 
 
 def move_file(source_dir, dest, filename):
+    sleep(1)
     dest_name = make_unique(dest, filename)
     # Stopped using os.path.join -- uses backlashes in Windows which don't mix with the forward slashes. 
     try:
