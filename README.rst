@@ -121,7 +121,7 @@ executable. Then copy the service file to ``/etc/systemd/system/``. Start and en
 
 | To check the status of the service and debug, use:
 |  ``systemctl status filesorganizer``, and
-|  ``sudo journalctl -u filesorganizer``
+|  ``sudo journalctl -u filesorganizer|tail -f``
 
 
 Use Recursion
