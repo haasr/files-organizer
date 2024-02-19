@@ -45,7 +45,7 @@ DIRECTORIES_MAP = {
 EXTENSIONS_MAP = {
     "audio":          [ '.mp3', '.wav', '.ogg', ],
     "citations":      [ '.bib', '.enl', '.ris', ],
-    "executables":    [ '.exe', '.msi', '.appimage', ],
+    "executables":    [ '.exe', '.msi', '.msix', '.appimage', ],
     "images":         [ '.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.ico', ],
     "pdfs":           [ '.pdf', ],
     "powerpoints":    [ '.ppt', '.pptx', ],
