@@ -8,6 +8,15 @@ Python script to automagically sort your files according to their extensions.
 .. contents:: Contents
 
 
+Changes (6/13/2024)
+###################
+
+- Added logging options and incorporated basic INFO logging.
+- Logging exception that may occur if user manually moves file at precisely the same time the program tries to.
+- Added a few more audio extensions and the HEIC image extension to the default extensions map.
+- Increased sleep time before file is moved from 1s to 2s.
+
+
 Requirements
 ############
 
@@ -131,3 +140,14 @@ The last line of code in ``config.py``, ``OBSERVER_RECURSIVE = False``
 means that the Observer will not traverse any subdirectories for changes.
 Toggle that to true if you wish to listen for changes in subdirectories
 as well.
+
+Logged output
+#############
+
+Logging settings are also configurable in ``config.py``. Unless you specify a path prefix in ``LOG_FILE_PATH``, the log file
+will be stored in the program's working directory. E.g., if the program were invoked from a VB script in your startup folder,
+you would find the log file in that folder.
+
+If you notice that files are no longer being automagically moved as expected, check the log. If you identify bugs, please start
+an issue in this repo, sharing the relevant log information, and your platform. Or if you've patched a bug, please reach out to
+me or send a pull request!
